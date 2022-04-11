@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -13,35 +13,37 @@
     <title>Document</title>
 </head>
 
-<body style="font-family:   Roboto;">
+<body class="colorbody">
     <header>
-        <nav>
-            <a href="#somos">quem somos no <strong>bcw18</strong></a>|
-            <a href="#conograma"> conograma do <strong>bcw18</strong></a>|
-            <a href="#dicas">dicas do team <strong>bcw18</strong></a>|
-            <a href="#trabalho">orientaçoes de trabalho do dev</a>
-        </nav>
+        <ul>
+            <li><a href="#cadastro">Cadastro</a></li>
+            <li><a href="#trajetoria"> conograma do curso</a></li>
+            <li><a href="#dicas">dicas do team</a></li>
+            <li><a href="#trabalho">orientaçoes de trabalho do dev</a></li>
+        </ul>
     </header>
     <main>
-        <div style="width:650px">
-            <h1>trajetoria de sucesso </h1>
-            <br>
-            <hr>
-            <table>
+        <div class="divisorbase"  id="trajetoria">
+            <table class="letra">
                 <tr>
+                    <h1>trajetoria de sucesso </h1>
+                    <br>
+                    <hr>
+                    <br>
                     <th><strong>Fase</strong></th>
                     <th><strong>Descrição</strong></th>
                     <th><strong>Imagem</strong></th>
                 </tr>
                 <tr>
-                    <td id="conograma">Primeira</td>
+                    <td>Primeira</td>
                     <td>
                         incrição site oficial, execução de teste de logica,
                         curso da trilha zero e montagem do pitch
                     </td>
                     <td>
                         <figure>
-                            <img src="img/Nota.jpg" alt="altos da inscriçãona soulcode" height="250" width="250">
+                            <img class="imagens" src="img/Nota.jpg" alt="altos da inscriçãona soulcode" height="250"
+                                width="250"><br>
                             <figcaption>Fig 1 - Inscrição soulcode</figcaption>
                         </figure>
                     </td>
@@ -55,11 +57,10 @@
                     </td>
                     <td>
                         <figure>
-                            <img src="img/Mulher.jpg" alt="entrevista com recrutador para avalição da bolsa"
-                                height="250" width="250">
+                            <img class="imagens" src="img/Mulher.jpg"
+                                alt="entrevista com recrutador para avalição da bolsa" height="250" width="250"> <br>
                             <figcaption>Fig 2 - entrevista para recrutamento </figcaption>
                         </figure>
-
                     </td>
                 </tr>
                 <tr>
@@ -70,17 +71,73 @@
                     </td>
                     <td>
                         <figure>
-                            <img src="img/Pulo.jpg" alt="Dinamica em grupo com a realização de um teste on-line"
-                                height="250" width="250">
+                            <img class="imagens" src="img/Pulo.jpg"
+                                alt="Dinamica em grupo com a realização de um teste on-line" height="250"
+                                width="250"><br>
                             <figcaption>Fig 3 - aprovação no curso </figcaption>
                         </figure>
                     </td>
                 </tr>
             </table>
-
         </div>
-        <div>
-
+        <div class="divisorbase2" id="cadastro">
+            <form action="#" method="" class="letra2">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" placeholder="Entre com seu nome">
+                </div>
+                <br>
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" placeholder="Entre com sua senha" maxlength="15">
+                </div>
+                <br>
+                <div>
+                    <label for="escolaridade">Nivel escolar</label> <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="F1"> fundamental <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="M1"> Medio <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="B1"> bacharel <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="T1"> tecnologo <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="L1"> licenciado <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="BIg1"> BigBrain <br>
+                </div>
+                <br>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="" id="email" placeholder="Entre com seu email">
+                </div>
+                <br>
+                <div>
+                    <label for="nacismento">Data de Nacismento:</label>
+                    <input type="date" name="" id="nacismento">
+                </div>
+                <br>
+                <div>
+                    <label for="deficiencia">Deficiencia:</label>
+                    <input type="checkbox" id="deficiencia">
+                </div>
+                <br>
+                <div>
+                    <label for="experiencia">Qual foi a sua experiencia com programação</label>
+                    <input type="range" name="experiencia" id="experiencia" value="0" oninput="display.value=0"
+                        onchange="display.value=value">
+                    <input type="text" id="display" value="0" oninput="experiencia.value=value"
+                        onchange="experiencia.value=value" maxlength="3" size="3">
+                </div>
+                <br>
+                <div>
+                    <label for="descição">Descrição da experiencia</label>
+                    <br>
+                    <br>
+                    <textarea id="Descrição" cols="75" rows="5" placeholder="Descreva a sua experiencia"></textarea>
+                </div>
+                <br>
+                <div>
+                    <input type="submit" name="" id="" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
+                <br>
+            </form>
         </div>
     </main>
     <footer>
