@@ -13,8 +13,13 @@
     <title>Document</title>
 </head>
 
-<body class="colorbody">
-    <header>
+<body>
+    <div class="header">
+        <img src="img/logo-dark.png" alt="Logo da SoulCode" srcset="Imagem do Logo">
+        <h1>Bootcamp de Java Spring com Angular Web [19]</h1>
+        <p>Turma de Desenvolmento Web Full Stack da SoulCode academy </p>
+    </div>
+    <header class="topnav">
         <ul>
             <li><a href="#cadastro">Cadastro</a></li>
             <li><a href="#trajetoria"> conograma do curso</a></li>
@@ -23,62 +28,44 @@
         </ul>
     </header>
     <main>
-        <div class="divisorbase"  id="trajetoria">
-            <table class="letra">
-                <tr>
-                    <h1>trajetoria de sucesso </h1>
-                    <br>
-                    <hr>
-                    <br>
-                    <th><strong>Fase</strong></th>
-                    <th><strong>Descrição</strong></th>
-                    <th><strong>Imagem</strong></th>
-                </tr>
-                <tr>
-                    <td>Primeira</td>
-                    <td>
+        <div class="row" id="trajetoria">
+            <div class="colum">
+                <h1>Primeira Fase </h1>
+                <div class="gallery">
+                    <a target="_blank" href="img/Nota.jpg">
+                        <img src="img/Nota.jpg" alt="Fase 1" >
+                    </a>
+                    <div class="desc">
                         incrição site oficial, execução de teste de logica,
-                        curso da trilha zero e montagem do pitch
-                    </td>
-                    <td>
-                        <figure>
-                            <img class="imagens" src="img/Nota.jpg" alt="altos da inscriçãona soulcode" height="250"
-                                width="250"><br>
-                            <figcaption>Fig 1 - Inscrição soulcode</figcaption>
-                        </figure>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Segunda</td>
-                    <td>
+                        curso da trilha zero e mont
+                    </div>
+                </div>
+            </div>
+            <div class="colum">
+                <h1>Segunda Fase </h1>
+                <div class="gallery">
+                    <a target="_blank" href="img/Mulher.jpg">
+                        <img src="img/Mulher.jpg" alt="Fase 2" >
+                    </a>
+                    <div class="desc">
                         teste trilha zero e entrevista com recrutador para avalição da bolsa,
                         nesta fase se analisa elegibilidade para a bolsa de estudo
                         perante os clientes e o candidato
-                    </td>
-                    <td>
-                        <figure>
-                            <img class="imagens" src="img/Mulher.jpg"
-                                alt="entrevista com recrutador para avalição da bolsa" height="250" width="250"> <br>
-                            <figcaption>Fig 2 - entrevista para recrutamento </figcaption>
-                        </figure>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Terceiro</td>
-                    <td>
+                    </div>
+                </div>
+            </div>
+            <div class="colum">
+                <h1>Terceira Fase </h1>
+                <div class="gallery">
+                    <a target="_blank" href="img/Pulo.jpg">
+                        <img src="img/Pulo.jpg" alt="Fase 3" >
+                    </a>
+                    <div class="desc">
                         Dinamica em grupo com a realização de um teste on-line e
                         convocação dos alunos aprovados.
-                    </td>
-                    <td>
-                        <figure>
-                            <img class="imagens" src="img/Pulo.jpg"
-                                alt="Dinamica em grupo com a realização de um teste on-line" height="250"
-                                width="250"><br>
-                            <figcaption>Fig 3 - aprovação no curso </figcaption>
-                        </figure>
-                    </td>
-                </tr>
-            </table>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="divisorbase2" id="cadastro">
             <form action="#" method="" class="letra2">
@@ -141,7 +128,6 @@
         </div>
     </main>
     <footer>
-
     </footer>
 
 </body>
