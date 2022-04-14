@@ -2,7 +2,7 @@ body {
     font-family: Roboto;
     margin: 0;
     padding: 0;
-    border: 0;
+    border: 100;
 }
 
 * {
@@ -42,7 +42,7 @@ body {
 .colum {
     float: left;
     width: 33.33%;
-    padding: 15px;
+    padding: 25px;
     background-color: #4a148ce8;
 }
 
@@ -98,18 +98,19 @@ input[type=reset] {
 
 input[type=submit]:hover,
 input[type=reset]:hover {
-    background-color: #7200ca;
+    background-color: #4a148ce8;
     transition: 0.3s;
 }
 
 .formContainer {
-    margin: 50px;
+    margin: 75px;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 50%;
     border-radius: 5px;
-    background-color: white;
+    background-color: #7200ca;
     padding: 20px;
+    border-radius: 5%;
 
 }
 
@@ -131,6 +132,7 @@ input[type=reset]:hover {
     display: table;
     clear: both;
     justify-items: flex-start;
+    margin-top: 25px;
 }
 
 .leftColum {
@@ -141,9 +143,10 @@ input[type=reset]:hover {
 .rightColum {
     float: left;
     width: 25%;
-    background-color: aliceblue;
+    background-color: #aa00ff;
     padding-left: 20px;
     text-align: center;
+
 }
 
 .img {
@@ -157,21 +160,21 @@ input[type=reset]:hover {
     background-color: white;
     padding: 20px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .row {
     content: "";
     display: table;
     clear: both;
-    width: 90%;
-    margin-left: auto;
+    width: 100%;
+    margin-left: 0px;
     margin-right: auto;
-
 }
 
 .row::after {
     content: "";
-    display: table;
+    display: both;
     clear: both;
 }
 
@@ -185,13 +188,44 @@ input[type=reset]:hover {
     font-weight: bold;
 }
 
+.footerSocial {
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.footerSocial>div {
+    background-color: #7200ca;
+    width: 3%;
+    margin: 5px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 15px;
+
+}
+
+.footerSocial>div>img {
+    text-align: center;
+    float: right;
+    border: none
+}
+
+.footerSocial>div>p {
+    text-align: center;
+    float: center;
+
+}
+
+
 @media screen and (max-width: 400px) {
+
     .leftColum,
-    .rightColum{
+    .rightColum {
         width: 100%;
         padding: 0;
     }
-    .topnav a{
+
+    .topnav a {
         float: none;
         width: 100%;
     }
@@ -199,25 +233,25 @@ input[type=reset]:hover {
 
 
 @media screen and (max-width: 600px) {
+
     .col-20,
     .col-70,
     input[type=submit],
-    input[type=reset]{
+    input[type=reset] {
         width: 100%;
         margin-top: 0;
     }
+
     .colum {
         width: 100%;
     }
 }
 
 @media screen and (max-width: 800px) {
+
     .leftColum,
-    .rightColum{
+    .rightColum {
         width: 100%;
         padding: 0;
     }
 }
-
-
-
